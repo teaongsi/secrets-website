@@ -11,7 +11,7 @@ var pass = "";
 
 app.use(bodyParser.urlencoded({extended:true}));
 
-function passwordCheck(req ,res ,next){
+function passwordCheck(req ,res ,next) {
     console.log(req.body);
     pass = req.body["password"];
     next();
